@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  
+    tools:context="dementiaHack.augmentedmemory.MainActivity" >
+	<FrameLayout
+        android:id="@+id/cameraview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+		
+	
+    </FrameLayout>
+   			 <Button
+		    android:id="@+id/Time"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		     android:textColor="@android:color/white"
+		     android:layout_below="@+id/digitalClock1"
+		     android:layout_alignParentRight="true"
+         android:textColorHighlight="@android:color/holo_blue_bright"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"
+		    android:text="Button" />
+   			 
+   			 <TextView
+   			      android:id="@+id/Location"
+		    android:layout_width="150dp"
+		    android:layout_height="wrap_content"
+		     android:textColor="@android:color/white"
+		    android:layout_alignParentTop="true"
+		     android:layout_alignParentLeft="true"
+         android:textColorHighlight="@android:color/holo_blue_bright"
+        android:background="@android:color/transparent"
+        android:textSize="15dp"
+		    android:text="Button"  />
+   			 
+   			 
+	
+    	<DigitalClock
+		    android:id="@+id/digitalClock1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		   android:layout_alignParentTop="true"
+		   android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+        	android:background="@android:color/transparent"
+        	android:textSize="25dp"
+		    android:text="DigitalClock" />
+	
+    <Button
+        android:id="@+id/button2"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:textColor="@android:color/white"
+         android:textColorHighlight="@android:color/holo_blue_bright"
+       android:background="@drawable/blackbut"
+        
+        android:text="Identify" />
+
+    <Button
+        android:id="@+id/button1"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="36dp"
+        android:layout_marginLeft="22dp"
+          android:layout_marginTop="36dp"
+        android:layout_marginRight="22dp"
+        android:textColor="@android:color/white"
+        android:textColorHighlight="@android:color/holo_blue_bright"
+         android:background="@drawable/blackbut"
+        android:text="Add Friend" />
+
+   
+
+</RelativeLayout>
